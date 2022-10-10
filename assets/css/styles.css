@@ -1,15 +1,14 @@
-/*==================== GOOGLE FONTS ====================*/
+/* Main font: Poppins from Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*==================== VARIABLES CSS ====================*/
+/* Variable CSS */
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
     /* HSL color mode */
+    /* Main colour (purple-ish hue) */
+    --hue-color: 250; 
+
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -23,10 +22,9 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*========== Font and typography ==========*/
+    /* Font labelling and sizing appropriations */
     --body-font: 'Poppins', sans-serif;
 
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -35,12 +33,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*========== Font weight ==========*/
+    /* Font weightings */
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    /* For the margin at the bottom */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -50,13 +47,13 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
+    /* z index allows for overlapping (using for icons, etc?) */
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
 }
 
-/* Font size for large devices */
+/* Change sizes for big devices */
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
@@ -75,7 +72,7 @@
 /*========== Button Dark/Light ==========*/
 
 
-/*==================== BASE ====================*/
+/* Ground level setting up */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -112,7 +109,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/* reusable clauses */
 .section {
   padding: 2rem 0 4rem;
 }
@@ -133,7 +130,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+/* layout of the websites */
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
